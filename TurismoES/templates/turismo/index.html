@@ -9,14 +9,14 @@
 <body>
     <div class="center">
         <h1>Login</h1>
-        <form method="post">
+        <form id="trabajoForm">
         <div class="txt_field">
-            <input type="text" required>
+            <input type="text" id="User" required>
             <span></span>
             <label>Username</label>
         </div>
         <div class="txt_field">
-            <input type="password" required>
+            <input type="password" id="Clave" required>
             <span></span>
             <label>Password</label>
         </div>
@@ -27,5 +27,8 @@
         </div>
         </form>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/funcion.js'%}"></script>
 </body>
 </html>
