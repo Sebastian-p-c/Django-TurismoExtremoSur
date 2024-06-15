@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Animated Login Form</title>
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form id="trabajoForm">
+        <div class="txt_field">
+            <input type="text" id="User" required>
+            <span></span>
+            <label>Username</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" id="Clave" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <a href="{% url 'service_list' %}">Nuevo Servicios</a>
+        <div class="signup_link">
+            Not a member? <a href="#">Signup</a>
+        </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/funcion.js'%}"></script>
+</body>
+</html>
