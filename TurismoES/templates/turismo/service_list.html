@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nuestros Servicios</title>
+</head>
+<body>
+    <h1>Nuestros Servicios</h1>
+    <ul>
+        {% for service in services %}
+            <li>
+                <h2>{{ service.descripcion }}</h2>
+                <p>Precio: ${{ service.precio }}</p>
+                <img src="{{ service.foto.url }}" alt="Foto de {{ service.descripcion }}">
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
